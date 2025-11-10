@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semilla - Plataforma de crowdfunding para proyectos creativos">
+    <title>Semilla - Financia tu proyecto creativo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/semilla_icon.png" alt="Logo Semilla" class="header__logo-icon">
+                    <span class="header__logo-text">Semilla</span>
+                </a>
+            </div>
+            <nav class="header__nav" aria-label="Navegación principal">
+                <a href="index.html" class="header__link">Inicio</a>
+                <a href="explorar.html" class="header__link">Explorar</a>
+
+                <a href="#" class="header__link header__link--auth-required" style="display: none;">Crear Proyecto</a>
+                <a href="#" class="header__link header__link--auth-required" style="display: none;">Mis Proyectos</a>
+                <a href="#" class="header__link header__link--auth-required" style="display: none;">Favoritos</a>
+                <a href="#" class="header__link header__link--auth-required" style="display: none;">Mis Aportes</a>
+
+                <a href="#" class="header__link header__link--admin-required" style="display: none;">Administración</a>
+            </nav>
+
+            <div class="header__actions header__guest-menu">
+                <a href="registro.html" class="btn btn--registrarse">Regístrate</a>
+                <a href="auth.html" class="btn btn--login" aria-label="Iniciar sesión">Iniciar sesión</a>
+            </div>
+            <div class="header__user-menu" style="display: none;">
+                <button class="btn btn--user" aria-label="Menú de usuario">
+                    <span>Usuario</span>
+                </button>
+                <!-- Dropdown menu para usuarios autenticados -->
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <img class="hero__bg" src="img/semi-ll_processed.png" alt="Semilla - Plataforma de crowdfunding" loading="eager">
+            <div class="hero__container">
+                <h1 class="hero__title">Financia tu proyecto creativo.</h1>
+                <p class="hero__subtitle">Semilla es la plataforma donde los creadores conectan con una comunidad que cree en sus ideas.</p>
+                <div class="hero__ctas">
+                    <a href="explorar.html" class="btn btn--primary" aria-label="Explorar proyectos disponibles">Explorar Proyectos</a>
+                    <a href="#" class="btn btn--secondary" aria-label="Crear tu proyecto">Crea Tu Proyecto</a>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="steps__container">
+                <h2 class="section-title">¿Cómo funciona?</h2>
+                <div class="steps__grid">
+                    <article class="card card--step" aria-label="Paso 1: Lanza tu idea">
+                        <div class="card__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 14L26 22H34L27.5 27L29.5 35L24 30L18.5 35L20.5 27L14 22H22L24 14Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__number">1. Lanza tu idea</h3>
+                        <p class="card__text">Define tu proyecto, establece tu meta de financiación y cuenta tu historia.</p>
+                    </article>
+                    <article class="card card--step" aria-label="Paso 2: Comparte con tu comunidad">
+                        <div class="card__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="14" cy="22" r="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="34" cy="22" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M10 34C10 30 13 28 16 28H32C35 28 38 30 38 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__number">2. Comparte con tu comunidad</h3>
+                        <p class="card__text">Moviliza a tus seguidores y al público de Semilla para que apoyen tu proyecto.</p>
+                    </article>
+                    <article class="card card--step" aria-label="Paso 3: Hazlo realidad">
+                        <div class="card__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M14 24L22 32L38 16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__number">3. Hazlo realidad</h3>
+                        <p class="card__text">Utiliza los fondos para crear, producir y entregar tus recompensas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="categories__container">
+                <h2 class="section-title">Explora por Categoría</h2>
+                <div class="categories__grid">
+                    <button class="chip" aria-label="Explorar proyectos de Arte">Arte</button>
+                    <button class="chip" aria-label="Explorar proyectos de Cómics y Novelas Gráficas">Cómics y Novelas Gráficas</button>
+                    <button class="chip" aria-label="Explorar proyectos de Diseño y Tecnología">Diseño y Tecnología</button>
+                    <button class="chip" aria-label="Explorar proyectos de Cine">Cine</button>
+                    <button class="chip" aria-label="Explorar proyectos de Comida y Bebida">Comida y Bebida</button>
+                    <button class="chip" aria-label="Explorar proyectos de Juegos">Juegos</button>
+                    <button class="chip" aria-label="Explorar proyectos de Música">Música</button>
+                    <button class="chip" aria-label="Explorar proyectos de Publicaciones">Publicaciones</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="featured__container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Descubre las ideas que están cobrando vida ahora mismo.</p>
+                <div class="featured__grid">
+                    <article class="card card--project">
+                        <img src="https://picsum.photos/seed/semilla1/640/360" alt="Imagen de portada del proyecto: Cortometraje de Animación: El Viaje de Elara" class="project-card__image" loading="lazy"/>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Arte</span>
+                            <h3 class="project-card__title">
+                                <a href="proyecto.html" class="project-card__title-link" aria-label="Ver detalles del proyecto Cortometraje de Animación: El Viaje de Elara">
+                                    Cortometraje de Animación: El Viaje de Elara
+                                </a>
+                            </h3>
+                            <p class="project-card__author">por Ara Martínez</p>
+                            <div class="project-card__progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de financiación: 75%">
+                                    <div class="progress-bar__fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="project-card__stat">
+                                    <span class="project-card__stat-value">$1,500</span>
+                                    <span class="project-card__stat-label"> de $2,000</span>
+                                </div>
+                                <div class="project-card__stat">
+                                    <span class="project-card__stat-value">15</span>
+                                    <span class="project-card__stat-label"> días</span>
+                                </div>
+                            </div>
+                            <div class="project-card__footer">
+                                <a href="proyecto.html" class="btn btn--view-project" aria-label="Ver detalles completos del proyecto">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--project">
+                        <img src="https://picsum.photos/seed/semilla2/640/360" alt="Imagen de portada del proyecto: Juego de Mesa Ecológico: Gaia's Guardians" class="project-card__image" loading="lazy"/>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Diseño y Tecnología</span>
+                            <h3 class="project-card__title">
+                                <a href="proyecto.html" class="project-card__title-link" aria-label="Ver detalles del proyecto Juego de Mesa Ecológico: Gaia's Guardians">
+                                    Juego de Mesa Ecológico: Gaia's Guardians
+                                </a>
+                            </h3>
+                            <p class="project-card__author">por Estudio Quimera</p>
+                            <div class="project-card__progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de financiación: 45%">
+                                    <div class="progress-bar__fill" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="project-card__stat">
+                                    <span class="project-card__stat-value">$4,500</span>
+                                    <span class="project-card__stat-label"> de $10,000</span>
+                                </div>
+                                <div class="project-card__stat">
+                                    <span class="project-card__stat-value">32</span>
+                                    <span class="project-card__stat-label"> días</span>
+                                </div>
+                            </div>
+                            <div class="project-card__footer">
+                                <a href="proyecto.html" class="btn btn--view-project" aria-label="Ver detalles completos del proyecto">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--project">
+                        <img src="https://picsum.photos/seed/semilla3/640/360" alt="Imagen de portada del proyecto: Libro de Poesía: Voces del Asfalto" class="project-card__image" loading="lazy"/>
+                        <div class="project-card__content">
+                            <span class="project-card__category">Publicaciones</span>
+                            <h3 class="project-card__title">
+                                <a href="proyecto.html" class="project-card__title-link" aria-label="Ver detalles del proyecto Libro de Poesía: Voces del Asfalto">
+                                    Libro de Poesía: Voces del Asfalto
+                                </a>
+                            </h3>
+                            <p class="project-card__author">por Javier Ríos</p>
+                            <div class="project-card__progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de financiación: 92%">
+                                    <div class="progress-bar__fill" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="project-card__stats">
+                                <div class="project-card__stat">
+                                    <span class="project-card__stat-value">$2,750</span>
+                                    <span class="project-card__stat-label"> de $3,000</span>
+                                </div>
+                                <div class="project-card__stat">
+                                    <span class="project-card__stat-value">5</span>
+                                    <span class="project-card__stat-label"> días</span>
+                                </div>
+                            </div>
+                            <div class="project-card__footer">
+                                <a href="proyecto.html" class="btn btn--view-project" aria-label="Ver detalles completos del proyecto">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="faq__container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq__list">
+                    <article class="faq__item">
+                        <h3 class="faq__question-static">¿Qué es Semilla?</h3>
+                        <div class="faq__answer-static">
+                            <p>Semilla es una plataforma de crowdfunding que conecta creadores con una comunidad global dispuesta a financiar proyectos creativos en áreas como arte, tecnología, música, cine y más. Ayudamos a convertir ideas en realidad.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3 class="faq__question-static">¿Cómo funciona la financiación?</h3>
+                        <div class="faq__answer-static">
+                            <p>Los creadores establecen una meta de financiación y un plazo límite. Los patrocinadores pueden apoyar el proyecto con diferentes cantidades. Si el proyecto alcanza su meta antes del plazo, el creador recibe los fondos para hacer realidad su proyecto.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3 class="faq__question-static">¿Quién puede apoyar un proyecto?</h3>
+                        <div class="faq__answer-static">
+                            <p>Cualquier persona puede apoyar un proyecto en Semilla. Solo necesitas crear una cuenta gratuita, explorar los proyectos disponibles y seleccionar el nivel de apoyo que desees. Muchos proyectos ofrecen recompensas exclusivas para sus patrocinadores.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="img/semilla_icon.png" alt="Logo Semilla" class="footer__logo-icon">
+                        <span class="footer__logo-text">Semilla</span>
+                    </div>
+                    <p class="footer__tagline">Financiando la creatividad, un proyecto a la vez.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Explorar</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de exploración">
+                        <a href="#" class="footer__link">Arte</a>
+                        <a href="#" class="footer__link">Cine</a>
+                        <a href="#" class="footer__link">Música</a>
+                        <a href="#" class="footer__link">Juegos</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Nosotros</h3>
+                    <nav class="footer__nav" aria-label="Enlaces sobre nosotros">
+                        <a href="#" class="footer__link">Sobre Semilla</a>
+                        <a href="#" class="footer__link">Contacto</a>
+                        <a href="#" class="footer__link">Prensa</a>
+                        <a href="#" class="footer__link">Carreras</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Ayuda</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de ayuda">
+                        <a href="#" class="footer__link">Centro de Ayuda</a>
+                        <a href="#" class="footer__link">Nuestras Reglas</a>
+                        <a href="#" class="footer__link">Términos de Uso</a>
+                        <a href="#" class="footer__link">Política de Privacidad</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Semilla. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

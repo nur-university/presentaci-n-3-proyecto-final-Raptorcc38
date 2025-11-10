@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cultivando un Futuro Verde - Proyecto de crowdfunding en Semilla">
+    <title>Cultivando un Futuro Verde - Semilla</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/semilla_icon.png" alt="Logo Semilla" class="header__logo-icon">
+                    <span class="header__logo-text">Semilla</span>
+                </a>
+            </div>
+            <nav class="header__nav" aria-label="Navegación principal">
+                <a href="explorar.html" class="header__link">Explorar</a>
+                <a href="#" class="header__link">Crear un proyecto</a>
+            </nav>
+            <div class="header__actions">
+                <a href="auth.html" class="btn btn--registrarse">Regístrate</a>
+                <a href="auth.html" class="btn btn--login">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main pagina-proyecto">
+        <div class="contenedor-proyecto">
+            <div class="layout-proyecto">
+                <!-- Columna principal -->
+                <div class="columna-principal">
+                    <!-- Hero imagen -->
+                    <div class="proyecto-hero">
+                        <img src="https://picsum.photos/seed/proyecto-hero/1280/720" alt="Imagen representativa del proyecto Cultivando un Futuro Verde" class="proyecto-hero__imagen">
+                    </div>
+
+                    <!-- Chips de categoría y estado -->
+                    <div class="proyecto-etiquetas">
+                        <span class="chip chip--categoria">Medio Ambiente</span>
+                        <span class="badge badge--success">EN PROGRESO</span>
+                    </div>
+
+                    <!-- Título y autor -->
+                    <div class="proyecto-encabezado">
+                        <h1 class="proyecto-titulo">Cultivando un Futuro Verde: Iniciativa de Jardinería Comunitaria</h1>
+                        <p class="proyecto-autor">Por <a href="#" class="autor-link">Elena Ramirez</a></p>
+                    </div>
+
+                    <!-- Métricas y barra de progreso -->
+                    <div class="proyecto-metricas">
+                        <div class="metricas-superior">
+                            <div class="monto-info">
+                                <span class="monto-recaudado">6,500€</span>
+                                <span class="monto-meta">recaudado de 10,000€</span>
+                            </div>
+                            <div class="porcentaje-info">
+                                <span class="porcentaje-valor">65%</span>
+                            </div>
+                        </div>
+
+                        <div class="barra-progreso-container">
+                            <div class="barra-progreso" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de financiación: 65%">
+                                <div class="progreso-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metricas-inferior">
+                            <span class="dias-restantes">25 días restantes</span>
+                        </div>
+                    </div>
+
+                    <!-- Descripción del proyecto -->
+                    <div class="proyecto-descripcion">
+                        <div class="descripcion-intro">
+                            <p>Nuestra iniciativa busca transformar espacios urbanos abandonados en jardines comunitarios florecientes. Estos jardines no solo embellecerán nuestro entorno, sino que también fomentarán la cohesión social y la educación ambiental. Con tu apoyo, podemos crear un oasis verde en el corazón de nuestra ciudad, un espacio para que todos puedan conectar con la naturaleza, aprender sobre sostenibilidad y cultivar alimentos frescos y saludables.</p>
+                            
+                            <figure class="descripcion-imagen">
+                                <img src="https://picsum.photos/seed/jardin1/800/450" alt="Jardín comunitario en funcionamiento" class="descripcion-imagen__img">
+                                <figcaption class="descripcion-imagen__caption">Ejemplo de un jardín comunitario similar al que queremos crear</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="descripcion-seccion">
+                            <h3 class="seccion-titulo">Objetivos:</h3>
+                            <ul class="lista-objetivos">
+                                <li>Establecer tres jardines comunitarios en diferentes barrios.</li>
+                                <li>Organizar talleres sobre jardinería orgánica y compostaje.</li>
+                                <li>Crear un espacio de encuentro intergeneracional y multicultural.</li>
+                            </ul>
+                            
+                            <div class="descripcion-video">
+                                <iframe 
+                                    class="descripcion-video__iframe"
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                    title="Video explicativo del proyecto"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                                <p class="descripcion-video__caption">Video explicativo sobre la importancia de los jardines comunitarios</p>
+                            </div>
+                        </div>
+
+                        <div class="descripcion-seccion">
+                            <h3 class="seccion-titulo">Impacto:</h3>
+                            <p>Mejora de la calidad del aire y reducción del estrés urbano.</p>
+                            <p>Fomento de la biodiversidad y creación de hábitats para la fauna local.</p>
+                            <p>Promoción de una alimentación más saludable y sostenible.</p>
+                            
+                            <figure class="descripcion-imagen">
+                                <img src="https://picsum.photos/seed/jardin2/800/450" alt="Comunidad trabajando en el jardín" class="descripcion-imagen__img">
+                                <figcaption class="descripcion-imagen__caption">La comunidad trabajando junta en proyectos similares</figcaption>
+                            </figure>
+                        </div>
+
+                        <p class="llamado-accion"><strong>¡Súmate a nuestra causa y ayúdanos a sembrar un futuro más verde y comunitario!</strong></p>
+                    </div>
+                </div>
+
+                <!-- Columna lateral -->
+                <aside class="columna-lateral">
+                    <!-- Tarjeta de acciones -->
+                    <div class="tarjeta-acciones">
+                        <!-- Estado activo (EN PROGRESO) -->
+                        <a href="auth.html" class="btn btn--donar" aria-label="Donar ahora al proyecto">
+                            Donar ahora
+                        </a>
+
+                        <!-- Estado deshabilitado (ejemplo para cuando NO esté EN PROGRESO) -->
+                        <!-- <button class="btn btn--donar is-disabled" aria-disabled="true" tabindex="-1">
+                            Donar ahora
+                        </button>
+                        <p class="nota-deshabilitado">La campaña no está activa</p> -->
+
+                        <a href="auth.html" class="btn btn--favorito" aria-label="Agregar a favoritos">
+                            Favorito
+                        </a>
+
+                        <button class="btn btn--compartir" aria-label="Compartir proyecto">
+                            Compartir
+                        </button>
+                    </div>
+
+                    <!-- Tarjeta de aportantes -->
+                    <div class="tarjeta-aportantes">
+                        <h2 class="aportantes-titulo">Principales Aportantes</h2>
+                        <ul class="lista-aportantes">
+                            <li class="aportante-item">
+                                <div class="aportante-contenido">
+                                    <img src="https://i.pravatar.cc/150?img=12" alt="Avatar de Carlos Mendoza" class="aportante-avatar">
+                                    <div class="aportante-info">
+                                        <span class="aportante-nombre">Carlos Mendoza</span>
+                                        <span class="aportante-monto">500€</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aportante-item">
+                                <div class="aportante-contenido">
+                                    <img src="https://i.pravatar.cc/150?img=47" alt="Avatar de Sofía García" class="aportante-avatar">
+                                    <div class="aportante-info">
+                                        <span class="aportante-nombre">Sofía García</span>
+                                        <span class="aportante-monto">300€</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="aportante-item">
+                                <div class="aportante-contenido">
+                                    <img src="https://i.pravatar.cc/150?img=33" alt="Avatar de Javier López" class="aportante-avatar">
+                                    <div class="aportante-info">
+                                        <span class="aportante-nombre">Javier López</span>
+                                        <span class="aportante-monto">250€</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="img/semilla_icon.png" alt="Logo Semilla" class="footer__logo-icon">
+                        <span class="footer__logo-text">Semilla</span>
+                    </div>
+                    <p class="footer__tagline">Financiando la creatividad, un proyecto a la vez.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Explorar</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de exploración">
+                        <a href="#" class="footer__link">Arte</a>
+                        <a href="#" class="footer__link">Cine</a>
+                        <a href="#" class="footer__link">Música</a>
+                        <a href="#" class="footer__link">Juegos</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Nosotros</h3>
+                    <nav class="footer__nav" aria-label="Enlaces sobre nosotros">
+                        <a href="#" class="footer__link">Sobre Semilla</a>
+                        <a href="#" class="footer__link">Contacto</a>
+                        <a href="#" class="footer__link">Prensa</a>
+                        <a href="#" class="footer__link">Carreras</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Ayuda</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de ayuda">
+                        <a href="#" class="footer__link">Centro de Ayuda</a>
+                        <a href="#" class="footer__link">Nuestras Reglas</a>
+                        <a href="#" class="footer__link">Términos de Uso</a>
+                        <a href="#" class="footer__link">Política de Privacidad</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Semilla. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

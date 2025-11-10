@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora proyectos creativos en Semilla - Plataforma de crowdfunding">
+    <title>Explorar Proyectos - Semilla</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header principal -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/semilla_icon.png" alt="Logo Semilla" class="header__logo-icon">
+                    <span class="header__logo-text">Semilla</span>
+                </a>
+            </div>
+            <nav class="header__nav" aria-label="Navegación principal">
+                <a href="index.html" class="header__link">Inicio</a>
+                <a href="explorar.html" class="header__link header__link--active">Explorar</a>
+                <a href="#" class="header__link">Crear</a>
+            </nav>
+            <a href="auth.html" class="btn btn--login" aria-label="Iniciar sesión">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main pagina-explorar">
+        <div class="contenedor-explorar">
+            <h1 class="titulo-pagina">Explorar Proyectos</h1>
+            
+            <div class="layout-explorar">
+                <!-- Panel de filtros a la izquierda -->
+                <aside class="panel-filtros">
+                    <h2 class="filtros-titulo">Filtros</h2>
+                    
+                    <form class="formulario-filtros">
+                        <!-- Categoría -->
+                        <div class="grupo-filtro">
+                            <label for="categoria" class="etiqueta-filtro">Categoría</label>
+                            <select id="categoria" class="control-filtro">
+                                <option value="todos">Todos</option>
+                                <option value="arte">Arte</option>
+                                <option value="tecnologia">Tecnología</option>
+                                <option value="comunidad">Comunidad</option>
+                                <option value="cine">Cine</option>
+                                <option value="musica">Música</option>
+                                <option value="juegos">Juegos</option>
+                                <option value="publicaciones">Publicaciones</option>
+                            </select>
+                        </div>
+
+                        <!-- Estado de la Campaña -->
+                        <div class="grupo-filtro">
+                            <label for="estado" class="etiqueta-filtro">Estado de la Campaña</label>
+                            <select id="estado" class="control-filtro">
+                                <option value="todos">Todos</option>
+                                <option value="en-progreso">En progreso</option>
+                                <option value="en-pausa">En pausa</option>
+                                <option value="no-iniciada">No iniciada</option>
+                                <option value="finalizada">Finalizada</option>
+                            </select>
+                        </div>
+
+                        <!-- Ordenar por -->
+                        <fieldset class="grupo-filtro">
+                            <legend class="etiqueta-filtro">Ordenar por</legend>
+                            <div class="grupo-radios">
+                                <label class="etiqueta-radio">
+                                    <input type="radio" name="ordenar" value="reciente" class="input-radio" checked>
+                                    <span>Reciente</span>
+                                </label>
+                                <label class="etiqueta-radio">
+                                    <input type="radio" name="ordenar" value="monto" class="input-radio">
+                                    <span>Monto Recaudado</span>
+                                </label>
+                                <label class="etiqueta-radio">
+                                    <input type="radio" name="ordenar" value="meta" class="input-radio">
+                                    <span>Meta</span>
+                                </label>
+                                <label class="etiqueta-radio">
+                                    <input type="radio" name="ordenar" value="fecha" class="input-radio">
+                                    <span>Fecha Límite</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </aside>
+
+                <!-- Contenedor de búsqueda y listado -->
+                <div class="contenedor-proyectos">
+                    <!-- Barra de búsqueda -->
+                    <form class="barra-busqueda" role="search">
+                        <label for="buscar-proyectos" class="visually-hidden">Buscar proyectos</label>
+                        <input type="search" id="buscar-proyectos" class="input-buscar" placeholder="Buscar proyectos..." aria-label="Buscar proyectos por nombre, autor o categoría">
+                        <button type="submit" class="boton-buscar" aria-label="Realizar búsqueda">Buscar</button>
+                    </form>
+
+                    <!-- Listado de proyectos -->
+                    <section class="lista-proyectos">
+                        <!-- Proyecto 1 -->
+                        <article class="tarjeta-proyecto">
+                            <img class="imagen-proyecto" src="https://picsum.photos/seed/proyecto1/640/360" alt="Portada del proyecto Línea de Moda Ecológica" loading="lazy">
+                            <div class="contenido-proyecto">
+                                <span class="categoria-proyecto">Arte</span>
+                                <h3 class="titulo-proyecto">
+                                    <a href="proyecto.html" class="link-proyecto">Línea de Moda Ecológica</a>
+                                </h3>
+                                <p class="autor-proyecto">Por Olivia Carter</p>
+
+                                <div class="info-recaudacion">
+                                    <p class="monto-recaudado">$7,500 recaudados</p>
+                                    <p class="meta-proyecto">Meta: $10,000</p>
+                                </div>
+
+                                <div class="barra-progreso" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progreso-fill" style="width: 75%"></div>
+                                </div>
+
+                                <div class="info-inferior">
+                                    <span class="porcentaje-progreso">75%</span>
+                                    <span class="dias-restantes">30 días restantes</span>
+                                </div>
+
+                                <a class="boton-ver-proyecto" href="proyecto.html">Ver Proyecto</a>
+                            </div>
+                        </article>
+
+                        <!-- Proyecto 2 -->
+                        <article class="tarjeta-proyecto">
+                            <img class="imagen-proyecto" src="https://picsum.photos/seed/proyecto2/640/360" alt="Portada del proyecto Iniciativa de Agricultura Sostenible" loading="lazy">
+                            <div class="contenido-proyecto">
+                                <span class="categoria-proyecto categoria-tecnologia">Tecnología</span>
+                                <h3 class="titulo-proyecto">
+                                    <a href="proyecto.html" class="link-proyecto">Iniciativa de Agricultura Sostenible</a>
+                                </h3>
+                                <p class="autor-proyecto">Por Ethan Bennett</p>
+
+                                <div class="info-recaudacion">
+                                    <p class="monto-recaudado">$10,000 recaudados</p>
+                                    <p class="meta-proyecto">Meta: $20,000</p>
+                                </div>
+
+                                <div class="barra-progreso" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progreso-fill" style="width: 50%"></div>
+                                </div>
+
+                                <div class="info-inferior">
+                                    <span class="porcentaje-progreso">50%</span>
+                                    <span class="dias-restantes">60 días restantes</span>
+                                </div>
+
+                                <a class="boton-ver-proyecto" href="proyecto.html">Ver Proyecto</a>
+                            </div>
+                        </article>
+
+                        <!-- Proyecto 3 -->
+                        <article class="tarjeta-proyecto">
+                            <img class="imagen-proyecto" src="https://picsum.photos/seed/proyecto3/640/360" alt="Portada del proyecto Renovación del Centro de Artes Comunitario" loading="lazy">
+                            <div class="contenido-proyecto">
+                                <span class="categoria-proyecto categoria-comunidad">Comunidad</span>
+                                <h3 class="titulo-proyecto">
+                                    <a href="proyecto.html" class="link-proyecto">Renovación del Centro de Artes Comunitario</a>
+                                </h3>
+                                <p class="autor-proyecto">Por Sophia Clark</p>
+
+                                <div class="info-recaudacion">
+                                    <p class="monto-recaudado">$12,500 recaudados</p>
+                                    <p class="meta-proyecto">Meta: $50,000</p>
+                                </div>
+
+                                <div class="barra-progreso" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progreso-fill" style="width: 25%"></div>
+                                </div>
+
+                                <div class="info-inferior">
+                                    <span class="porcentaje-progreso">25%</span>
+                                    <span class="dias-restantes">90 días restantes</span>
+                                </div>
+
+                                <a class="boton-ver-proyecto" href="proyecto.html">Ver Proyecto</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="img/semilla_icon.png" alt="Logo Semilla" class="footer__logo-icon">
+                        <span class="footer__logo-text">Semilla</span>
+                    </div>
+                    <p class="footer__tagline">Financiando la creatividad, un proyecto a la vez.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Explorar</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de exploración">
+                        <a href="#" class="footer__link">Arte</a>
+                        <a href="#" class="footer__link">Cine</a>
+                        <a href="#" class="footer__link">Música</a>
+                        <a href="#" class="footer__link">Juegos</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Nosotros</h3>
+                    <nav class="footer__nav" aria-label="Enlaces sobre nosotros">
+                        <a href="#" class="footer__link">Sobre Semilla</a>
+                        <a href="#" class="footer__link">Contacto</a>
+                        <a href="#" class="footer__link">Prensa</a>
+                        <a href="#" class="footer__link">Carreras</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Ayuda</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de ayuda">
+                        <a href="#" class="footer__link">Centro de Ayuda</a>
+                        <a href="#" class="footer__link">Nuestras Reglas</a>
+                        <a href="#" class="footer__link">Términos de Uso</a>
+                        <a href="#" class="footer__link">Política de Privacidad</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Semilla. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

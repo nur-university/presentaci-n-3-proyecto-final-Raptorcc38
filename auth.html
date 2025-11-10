@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicia sesión en Semilla - Plataforma de crowdfunding">
+    <title>Iniciar sesión - Semilla</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/semilla_icon.png" alt="Logo Semilla" class="header__logo-icon">
+                    <span class="header__logo-text">Semilla</span>
+                </a>
+            </div>
+            <nav class="header__nav" aria-label="Navegación principal">
+                <a href="index.html" class="header__link">Inicio</a>
+                <a href="explorar.html" class="header__link">Explorar</a>
+                <a href="#" class="header__link">Crear</a>
+            </nav>
+            <div class="header__actions">
+                <a href="registro.html" class="btn btn--registrarse">Regístrate</a>
+                <button class="btn btn--login visually-hidden" aria-hidden="true">Iniciar sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="auth">
+            <div class="auth__container">
+                <div class="auth__grid">
+                    <aside class="auth-aside">
+                        <img src="img/semilla_icon.png" alt="Logo Semilla" class="auth-aside__logo">
+                        <h2 class="auth-aside__title">Bienvenido de nuevo</h2>
+                        <p class="auth-aside__text">Accede a tu cuenta para continuar apoyando proyectos creativos.</p>
+                        <ul class="auth-bullets">
+                            <li class="auth-bullets__item">
+                                <span class="auth-bullets__icon">✓</span>
+                                <span>Apoya proyectos</span>
+                            </li>
+                            <li class="auth-bullets__item">
+                                <span class="auth-bullets__icon">✓</span>
+                                <span>Sigue tu progreso</span>
+                            </li>
+                            <li class="auth-bullets__item">
+                                <span class="auth-bullets__icon">✓</span>
+                                <span>Guarda favoritos</span>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <div class="auth-card">
+                        <h1 class="auth-card__title">Iniciar sesión</h1>
+                        <p class="auth-card__subtitle">
+                            ¿No tienes cuenta? <a href="registro.html" class="auth-card__link">Crear cuenta</a>
+                        </p>
+
+                        <form action="#" method="post" class="auth-form" id="form-login">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" autocomplete="email">
+                                <span id="email-error" class="field-error" style="display: none;"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" id="password" name="password" class="form-input" autocomplete="current-password">
+                                <span id="password-error" class="field-error" style="display: none;"></span>
+                            </div>
+
+                            <div class="form-group form-group--inline">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="remember" class="form-checkbox__input">
+                                    <span class="form-checkbox__label">Recordarme</span>
+                                </label>
+                                <a href="#" class="form-link">Olvidé mi contraseña</a>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">Iniciar sesión</button>
+                        </form>
+
+                        <p class="auth-card__aux">
+                            Al iniciar sesión aceptas los <a href="#" class="auth-card__link">Términos de Uso</a> y la <a href="#" class="auth-card__link">Política de Privacidad</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="img/semilla_icon.png" alt="Logo Semilla" class="footer__logo-icon">
+                        <span class="footer__logo-text">Semilla</span>
+                    </div>
+                    <p class="footer__tagline">Financiando la creatividad, un proyecto a la vez.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Explorar</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de exploración">
+                        <a href="#" class="footer__link">Arte</a>
+                        <a href="#" class="footer__link">Cine</a>
+                        <a href="#" class="footer__link">Música</a>
+                        <a href="#" class="footer__link">Juegos</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Nosotros</h3>
+                    <nav class="footer__nav" aria-label="Enlaces sobre nosotros">
+                        <a href="#" class="footer__link">Sobre Semilla</a>
+                        <a href="#" class="footer__link">Contacto</a>
+                        <a href="#" class="footer__link">Prensa</a>
+                        <a href="#" class="footer__link">Carreras</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Ayuda</h3>
+                    <nav class="footer__nav" aria-label="Enlaces de ayuda">
+                        <a href="#" class="footer__link">Centro de Ayuda</a>
+                        <a href="#" class="footer__link">Nuestras Reglas</a>
+                        <a href="#" class="footer__link">Términos de Uso</a>
+                        <a href="#" class="footer__link">Política de Privacidad</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Semilla. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
