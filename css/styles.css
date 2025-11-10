@@ -1,4 +1,4 @@
-/* Variables CSS */
+
 :root {
     --brand: #38d430;
     --brand-hover: #2ec028;
@@ -22,7 +22,6 @@
     --transition: all 0.2s ease-in-out;
 }
 
-/* Reset y Base */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -36,7 +35,6 @@ img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
 button { font-family: inherit; border: none; cursor: pointer; transition: var(--transition); }
 
-/* Header */
 .header {
     position: sticky;
     top: 0;
@@ -69,7 +67,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
 .header__link { color: var(--text); font-weight: 500; font-size: 0.9375rem; }
 .header__link:hover { color: var(--brand); }
 
-/* Buttons */
 .btn {
     padding: 0.625rem 1.25rem;
     border-radius: var(--radius-md);
@@ -113,10 +110,8 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
 }
 .btn--login:hover { border-color: var(--brand); color: var(--brand); }
 
-/* Main Content */
 .main { min-height: calc(100vh - 72px); }
 
-/* Hero */
 .hero {
     position: relative;
     min-height: 60vh;
@@ -140,7 +135,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     background: linear-gradient(135deg, var(--brand) 0%, var(--brand-hover) 100%);
 }
 
-/* Overlay sutil para mejorar legibilidad del texto */
 .hero::after {
     content: '';
     position: absolute;
@@ -186,7 +180,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     align-items: center;
 }
 
-/* Section Titles */
 .section-title {
     font-size: 1.875rem;
     font-weight: 700;
@@ -200,12 +193,11 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     font-size: 1rem;
 }
 
-/* Steps */
+
 .steps { padding: var(--spacing-2xl) var(--spacing-md); background-color: var(--bg); }
 .steps__container { max-width: 1280px; margin: 0 auto; }
 .steps__grid { display: grid; grid-template-columns: 1fr; gap: var(--spacing-lg); }
 
-/* Cards */
 .card {
     background-color: var(--surface);
     border-radius: var(--radius-lg);
@@ -219,7 +211,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
 .card__number { font-size: 1.25rem; font-weight: 600; margin-bottom: var(--spacing-sm); }
 .card__text { color: var(--muted); font-size: 0.9375rem; line-height: 1.6; }
 
-/* Categories */
 .categories { padding: var(--spacing-2xl) var(--spacing-md); background-color: var(--surface); }
 .categories__container { max-width: 1280px; margin: 0 auto; }
 .categories__grid { display: flex; flex-wrap: wrap; gap: var(--spacing-sm); justify-content: center; }
@@ -240,7 +231,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     box-shadow: var(--shadow-md);
 }
 
-/* Featured Projects */
 .featured { padding: var(--spacing-2xl) var(--spacing-md); background-color: var(--bg); }
 .featured__container { max-width: 1280px; margin: 0 auto; }
 .featured__grid { display: grid; grid-template-columns: 1fr; gap: var(--spacing-lg); }
@@ -290,7 +280,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
 }
 .btn--view-project:hover { background-color: var(--brand); color: var(--surface); }
 
-/* FAQ */
 .faq { padding: var(--spacing-2xl) var(--spacing-md); background-color: var(--surface); }
 .faq__container { max-width: 800px; margin: 0 auto; }
 .faq__list { display: flex; flex-direction: column; gap: var(--spacing-md); }
@@ -303,7 +292,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
 }
 .faq__answer-static p { color: var(--muted); font-size: 0.9375rem; line-height: 1.7; }
 
-/* Footer */
 .footer { background-color: var(--text); color: var(--bg); padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-lg); }
 .footer__container { max-width: 1280px; margin: 0 auto; }
 .footer__grid { display: grid; grid-template-columns: 1fr; gap: var(--spacing-xl); margin-bottom: var(--spacing-xl); }
@@ -332,7 +320,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
 .footer__bottom { padding-top: var(--spacing-lg); border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
 .footer__copyright { color: var(--muted); font-size: 0.875rem; }
 
-/* Accesibilidad */
 *:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 
 .visually-hidden {
@@ -347,7 +334,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     border: 0;
 }
 
-/* Responsive */
 @media (min-width: 768px) {
     .header__nav { display: flex; }
     .hero {
@@ -370,7 +356,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     .featured__grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Explorar */
 .header__link--active {
     color: var(--brand);
     font-weight: 600;
@@ -700,7 +685,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     box-shadow: 0 4px 8px rgba(56, 212, 48, 0.3);
 }
 
-/* Responsive */
 @media (max-width: 480px) {
     .barra-busqueda {
         flex-direction: column;
@@ -757,7 +741,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     }
 }
 
-/* Proyecto */
 .header__actions {
     display: flex;
     gap: var(--spacing-sm);
@@ -1223,7 +1206,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     }
 }
 
-/* Estados de Proyecto */
 .badge--draft {
     background-color: #9e9e9e;
     color: var(--surface);
@@ -1249,7 +1231,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     color: var(--surface);
 }
 
-/* Estados de Campaña */
 .badge--not-started {
     background-color: #9e9e9e;
     color: var(--surface);
@@ -1270,7 +1251,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     color: var(--surface);
 }
 
-/* Navegación condicional - para JavaScript */
 .header__user-menu {
     display: none;
 }
@@ -1287,7 +1267,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     display: none;
 }
 
-/* Editor de texto enriquecido - preparación para futuro */
 .rich-text-editor {
     min-height: 300px;
     border: 1px solid var(--border);
@@ -1302,7 +1281,6 @@ button { font-family: inherit; border: none; cursor: pointer; transition: var(--
     border-color: var(--brand);
 }
 
-/* Auth */
 .auth {
     padding: var(--spacing-xl) var(--spacing-md);
     min-height: calc(100vh - 72px);
