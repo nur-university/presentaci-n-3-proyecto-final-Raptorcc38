@@ -1,0 +1,132 @@
+
+.btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+.btn--primary {
+    background-color: var(--brand);
+    color: var(--surface);
+    box-shadow: 0 4px 12px rgba(56, 212, 48, 0.4);
+}
+.btn--primary:hover {
+    background-color: var(--brand-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(56, 212, 48, 0.5);
+}
+.btn--secondary {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--text);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+.btn--secondary:hover { 
+    background-color: var(--surface);
+    border-color: var(--surface);
+    color: var(--text);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+.btn--login {
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+.btn--login:hover { 
+    border-color: var(--brand); color: var(--brand); 
+}
+.btn--registrarse {
+    background-color: var(--brand);
+    color: var(--surface);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn--registrarse:hover { 
+    background-color: var(--brand-hover); 
+}
+.btn--view-project {
+    width: 100%;
+    background-color: transparent;
+    color: var(--brand);
+    border: 2px solid var(--brand);
+    padding: 0.625rem;
+}
+.btn--view-project:hover { 
+    background-color: var(--brand); color: var(--surface); 
+}
+.btn--donar {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    background-color: var(--brand);
+    color: var(--surface);
+    text-align: center;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    min-height: 44px;
+}
+.btn--donar:hover {
+    background-color: var(--brand-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(56, 212, 48, 0.4);
+}
+.btn--favorito,
+.btn--compartir {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    background-color: transparent;
+    color: var(--text);
+    border: 2px solid var(--border);
+    text-align: center;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    min-height: 44px;
+}
+.btn--favorito:hover,
+.btn--compartir:hover {
+    border-color: var(--brand);
+    color: var(--brand);
+}
+.btn--full {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1rem;
+    min-height: 44px;
+}
+.btn.is-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.btn.is-disabled:hover {
+    transform: none;
+    box-shadow: none;
+    background-color: var(--brand);
+}
+.is-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+

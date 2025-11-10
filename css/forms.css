@@ -1,0 +1,113 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.form-group--inline {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 0.9375rem;
+    color: var(--text);
+    background-color: var(--surface);
+    min-height: 44px;
+    transition: var(--transition);
+}
+
+.form-input:focus {
+    outline: 2px solid var(--brand);
+    outline-offset: 0;
+    border-color: var(--brand);
+}
+
+.form-input.is-invalid {
+    border-color: #dc2626;
+}
+
+.form-input.is-invalid:focus {
+    outline-color: #dc2626;
+    border-color: #dc2626;
+}
+
+.field-error {
+    font-size: 0.8125rem;
+    color: #dc2626;
+    display: none;
+    margin-top: 0.25rem;
+}
+
+.field-error.is-visible {
+    display: block;
+}
+
+.form-hint {
+    font-size: 0.8125rem;
+    color: var(--muted);
+}
+
+.form-hint--block {
+    margin-top: var(--spacing-md);
+    text-align: center;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--text);
+}
+
+.form-checkbox__input {
+    width: 18px;
+    height: 18px;
+    margin-top: 0.125rem;
+    cursor: pointer;
+    accent-color: var(--brand);
+    flex-shrink: 0;
+}
+
+.form-checkbox__label {
+    line-height: 1.5;
+}
+
+.form-link {
+    font-size: 0.875rem;
+    color: var(--brand);
+    text-decoration: underline;
+}
+
+.form-link:hover {
+    color: var(--brand-hover);
+}
+
+.rich-text-editor {
+    min-height: 300px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    background-color: var(--surface);
+}
+
+.rich-text-editor:focus {
+    outline: 2px solid var(--brand);
+    outline-offset: 0;
+    border-color: var(--brand);
+}
+

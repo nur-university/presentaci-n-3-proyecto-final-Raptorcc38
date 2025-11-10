@@ -1,0 +1,125 @@
+
+.auth {
+    padding: var(--spacing-xl) var(--spacing-md);
+    min-height: calc(100vh - 72px);
+    background-color: var(--bg);
+}
+.auth__container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.auth__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+}
+.auth-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
+}
+.auth-card__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text);
+}
+.auth-card__subtitle {
+    font-size: 0.9375rem;
+    color: var(--muted);
+    margin-bottom: var(--spacing-xl);
+}
+.auth-card__link {
+    color: var(--brand);
+    text-decoration: underline;
+}
+.auth-card__link:hover {
+    color: var(--brand-hover);
+}
+.auth-card__aux {
+    font-size: 0.8125rem;
+    color: var(--muted);
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    line-height: 1.5;
+}
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+.auth-aside {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+}
+.auth-aside__logo {
+    width: 64px;
+    height: 64px;
+    align-self: flex-start;
+}
+.auth-aside__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+.auth-aside__text {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+}
+.auth-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+.auth-bullets__item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 1rem;
+    color: var(--text);
+}
+.auth-bullets__icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--surface);
+    border-radius: 50%;
+    font-size: 0.875rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.register-card { 
+    order: 1; 
+}
+.register-aside { 
+    order: 2; 
+}
+.register-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+.register-illustration { 
+    margin-top: var(--spacing-lg); 
+}
+.register-illustration__img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+}
+
